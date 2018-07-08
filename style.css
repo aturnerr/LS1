@@ -1,0 +1,13 @@
+body{
+}
+
+.container {
+  display: flex;
+  height: 300px;
+}
+.testtext {
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin: auto;
+}
