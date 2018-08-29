@@ -1,13 +1,46 @@
-body{
-}
-
 .container {
-  display: flex;
-  height: 300px;
+  position: relative;
 }
-.testtext {
+#time {
+  position: absolute;
   width: 100%;
-  color: black;
   text-align: center;
-  margin: auto;
+  font-family: 'SFCompactDisplay-Thin';
+  font-size: 95px;
+  color: white;
+  z-index: 1;
+}
+#day {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: 'la Compagnie des Ombres';
+  font-size: 140px;
+  color: white;
+  opacity: 0.3;
+  /*text-shadow: 2px 2px 15px #000;*/
+  z-index: -1;
+  top: 25px;
+}
+#date {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: 'SFCompactDisplay-Light';
+  font-size: 25px;
+  color: white;
+  z-index: 1;
+  top: 135px;
+}
+@font-face{
+  font-family: 'SFCompactDisplay-Light';
+  src: url('fonts/SFCompactDisplay-Light.otf');
+}
+@font-face{
+  font-family: 'SFCompactDisplay-Thin';
+  src: url('fonts/SFCompactDisplay-Thin.otf');
+}
+@font-face{
+  font-family: 'la Compagnie des Ombres';
+  src: url('fonts/la Compagnie des Ombres.ttf');
 }
